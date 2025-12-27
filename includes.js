@@ -31,8 +31,12 @@
       button.classList.toggle('w--open', open);
       mobileNav.classList.toggle('w--open', open);
       menu.classList.toggle('w--open', open);
+      menu.style.display = open ? 'block' : 'none';
+      menu.setAttribute('aria-hidden', open ? 'false' : 'true');
       button.setAttribute('aria-expanded', open ? 'true' : 'false');
     };
+
+    setOpen(false);
 
     button.addEventListener('click', (event) => {
       event.preventDefault();

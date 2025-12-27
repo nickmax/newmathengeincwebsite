@@ -561,6 +561,56 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               object-fit: contain;
             }
 
+            .faq_list {
+              display: grid;
+              gap: 1rem;
+            }
+
+            .faq_item {
+              border: 1px solid rgba(0, 0, 0, 0.08);
+              border-radius: 0.75rem;
+              background: transparent;
+            }
+
+            .faq_item summary {
+              list-style: none;
+              cursor: pointer;
+              padding: 1.5rem;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              gap: 1rem;
+            }
+
+            .faq_item summary::-webkit-details-marker {
+              display: none;
+            }
+
+            .faq_item[open] summary {
+              border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+            }
+
+            .faq_item .faq_content {
+              padding: 1rem 1.5rem 1.5rem;
+            }
+
+            .faq_icon {
+              display: inline-flex;
+              align-items: center;
+              justify-content: center;
+              width: 1.5rem;
+              height: 1.5rem;
+              border: 1px solid rgba(0, 0, 0, 0.16);
+              border-radius: 999px;
+              font-size: 1rem;
+              line-height: 1;
+              flex-shrink: 0;
+            }
+
+            .faq_item[open] .faq_icon {
+              transform: rotate(45deg);
+            }
+
             .logo_marquee_logo_component {
               -webkit-animation: marquee 48s linear infinite;
               -moz-animation: marquee 48s linear infinite;
@@ -1432,6 +1482,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <img src="media/partnerlogos/sweevenlogo.png" alt="Sweeven Cafe logo" loading="lazy"></div>
                 <div class="logo_item">
                   <img src="media/partnerlogos/PDF.png" alt="People Dialogue Festival logo" loading="lazy"></div>
+                <div class="logo_item">
+                  <img src="media/partnerlogos/WHITE%20WAVE%20TOC.png" alt="White Wave TOC logo" loading="lazy"></div>
               </div>
               <div class="logo_marquee_logo_component">
                 <div class="logo_item">
@@ -1448,6 +1500,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <img src="media/partnerlogos/sweevenlogo.png" alt="Sweeven Cafe logo" loading="lazy"></div>
                 <div class="logo_item">
                   <img src="media/partnerlogos/PDF.png" alt="People Dialogue Festival logo" loading="lazy"></div>
+                <div class="logo_item">
+                  <img src="media/partnerlogos/WHITE%20WAVE%20TOC.png" alt="White Wave TOC logo" loading="lazy"></div>
               </div>
             </div>
           </div>
@@ -1802,6 +1856,112 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             </div>
           </div>
         </section>
+        <section id="how-we-work" class="g_section_wrap">
+          <div data-wf--global-section-space--section-space="medium" class="g_section_space w-variant-f1d60206-ffb1-00d2-d5a6-33c49b9a54ab"></div>
+          <div class="u-container">
+            <div class="u-vflex-stretch-top u-gap-xl">
+              <div class="divider_wrap">
+                <div class="divider_inner"></div>
+              </div>
+              <div class="u-grid-desktop">
+                <div class="g_heading w-richtext u-display-m u-max-width-20ch u-column-4">
+                  <p>How We Work</p>
+                </div>
+                <div class="u-column-8">
+                  <div class="u-grid-desktop solutions_grid">
+                    <div class="card thin-outline-card u-column-4">
+                      <div class="card-body">
+                        <h3 class="u-weight-medium">Discovery Call</h3>
+                        <p class="u-paragraph-s u-color-faded">We hop on a call, understand your needs, and craft a custom solution.</p>
+                      </div>
+                    </div>
+                    <div class="card thin-outline-card u-column-4">
+                      <div class="card-body">
+                        <h3 class="u-weight-medium">Agreement &amp; Kickoff</h3>
+                        <p class="u-paragraph-s u-color-faded">We align on the idea, sign paperwork, set the deposit, and begin work.</p>
+                      </div>
+                    </div>
+                    <div class="card thin-outline-card u-column-4">
+                      <div class="card-body">
+                        <h3 class="u-weight-medium">Delivery</h3>
+                        <p class="u-paragraph-s u-color-faded">We deliver on time and launch with clarity, support, and next steps.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-wf--global-section-space--section-space="medium" class="g_section_space w-variant-f1d60206-ffb1-00d2-d5a6-33c49b9a54ab"></div>
+        </section>
+        <section id="faqs" class="g_section_wrap">
+          <div data-wf--global-section-space--section-space="medium" class="g_section_space w-variant-f1d60206-ffb1-00d2-d5a6-33c49b9a54ab"></div>
+          <div class="u-container">
+            <div class="u-vflex-stretch-top u-gap-xl">
+              <div class="divider_wrap">
+                <div class="divider_inner"></div>
+              </div>
+              <div class="u-grid-desktop">
+                <div class="g_heading w-richtext u-display-m u-max-width-20ch u-column-4">
+                  <p>FAQs</p>
+                </div>
+                <div class="u-column-8">
+                  <div class="faq_list">
+                    <details class="faq_item">
+                      <summary class="u-paragraph-m u-weight-medium">
+                        <span>Turnaround Time</span>
+                        <span class="faq_icon">+</span>
+                      </summary>
+                      <div class="faq_content">
+                        <p class="u-paragraph-s u-color-faded">Turnaround can be as fast as 3 days, depending on the complexity of the work.</p>
+                      </div>
+                    </details>
+                    <details class="faq_item">
+                      <summary class="u-paragraph-m u-weight-medium">
+                        <span>Who We Work With</span>
+                        <span class="faq_icon">+</span>
+                      </summary>
+                      <div class="faq_content">
+                        <p class="u-paragraph-s u-color-faded">We serve schools, churches, NGOs, corporate teams, government, salons, and more. Your Customers Are Online. You Should Be Too!</p>
+                      </div>
+                    </details>
+                    <details class="faq_item">
+                      <summary class="u-paragraph-m u-weight-medium">
+                        <span>What We Build</span>
+                        <span class="faq_icon">+</span>
+                      </summary>
+                      <div class="faq_content">
+                        <div class="u-rich-text u-paragraph-s u-color-faded">
+                          <ul>
+                            <li>Business websites</li>
+                            <li>Online stores (e-commerce)</li>
+                            <li>Booking and scheduling systems</li>
+                            <li>Company emails (yourname@yourbrand.com)</li>
+                            <li>Logo and branding design</li>
+                            <li>Custom software</li>
+                            <li>Event pages and registration forms</li>
+                            <li>Digital strategy and guidance</li>
+                            <li>Promotional emails and SMS marketing</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </details>
+                    <details class="faq_item">
+                      <summary class="u-paragraph-m u-weight-medium">
+                        <span>Why It Matters</span>
+                        <span class="faq_icon">+</span>
+                      </summary>
+                      <div class="faq_content">
+                        <p class="u-paragraph-s u-color-faded">No Website = No Trust = No Growth. No Structure = No Growth. “Digitally present businesses grow revenue 2.5x faster than offline ones.” Your ideal clients are online every day — Googling, browsing, booking. If they can’t find you digitally, they’ll find someone else :(</p>
+                      </div>
+                    </details>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div data-wf--global-section-space--section-space="medium" class="g_section_space w-variant-f1d60206-ffb1-00d2-d5a6-33c49b9a54ab"></div>
+        </section>
         <section id="contact" class="g_section_wrap u-alignment-center">
           <div data-wf--global-section-space--section-space="main" class="g_section_space w-variant-60a7ad7d-02b0-6682-95a5-2218e6fd1490"></div>
           <div class="u-container">
@@ -1816,27 +1976,53 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div data-wf--button-main--style="primary" class="btn_main_wrap">
                       <div class="g_clickable_wrap">
                         <a class="g_clickable_link w-inline-block" data-wf-component-context="%5B%7B%22componentId%22%3A%222c0f222f-1a72-e58b-2343-5c20c1ff4552%22%2C%22instanceId%22%3A%22db05c8fe-bf59-318e-c60f-b637c6dd88d3%22%7D%2C%7B%22componentId%22%3A%22824b76d0-0ddb-5ed5-8ae6-09771aaa568a%22%2C%22instanceId%22%3A%222c0f222f-1a72-e58b-2343-5c20c1ff455a%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%22e3c8b535-008d-18b4-19d8-a889182de0e1%22%7D%5D" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-cta-position="Prefooter CTA section" data-wf-event-ids="157045761-157045764" href="Contact.html" data-cta="Home page" target="" data-cta-copy="Get in Touch" data-wf-native-id-path="db05c8fe-bf59-318e-c60f-b637c6dd88d3:2c0f222f-1a72-e58b-2343-5c20c1ff455a:e3c8b535-008d-18b4-19d8-a889182de0e1:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true">
-                          <span class="g_clickable_text u-sr-only">Get in Touch</span>
+                          <span class="g_clickable_text u-sr-only">Contact Form</span>
                         </a>
                         <button type="" class="g_clickable_btn">
-                          <span class="g_clickable_text u-sr-only">Get in Touch</span>
+                          <span class="g_clickable_text u-sr-only">Contact Form</span>
                         </button>
                       </div>
                       <div class="u-hide-if-empty u-icon-16"></div>
-                      <div aria-hidden="true" class="btn_main_text">Get in Touch</div>
+                      <div aria-hidden="true" class="btn_main_text">Contact Form</div>
                       <div class="u-hide-if-empty u-icon-16"></div>
                     </div>
                     <div data-wf--button-main--style="secondary" class="btn_main_wrap w-variant-e85564cd-af30-a478-692b-71732aefb3ab">
                       <div class="g_clickable_wrap">
-                        <a class="g_clickable_link w-inline-block" data-wf-component-context="%5B%7B%22componentId%22%3A%222c0f222f-1a72-e58b-2343-5c20c1ff4552%22%2C%22instanceId%22%3A%22db05c8fe-bf59-318e-c60f-b637c6dd88d3%22%7D%2C%7B%22componentId%22%3A%22824b76d0-0ddb-5ed5-8ae6-09771aaa568a%22%2C%22instanceId%22%3A%22200b5534-4443-4120-3817-5d8ac39574e2%22%7D%2C%7B%22componentId%22%3A%220254e612-9509-0757-3332-f6be61ca6889%22%2C%22instanceId%22%3A%22e3c8b535-008d-18b4-19d8-a889182de0e1%22%7D%5D" data-wf-element-id="0254e612-9509-0757-3332-f6be61ca688a" data-cta-position="Prefooter CTA section" data-wf-event-ids="157045761-157045764" href="Portfolio.html" data-cta="Home page" target="" data-cta-copy="View Portfolio" data-wf-native-id-path="db05c8fe-bf59-318e-c60f-b637c6dd88d3:200b5534-4443-4120-3817-5d8ac39574e2:e3c8b535-008d-18b4-19d8-a889182de0e1:0254e612-9509-0757-3332-f6be61ca688a" data-wf-ao-click-engagement-tracking="true">
-                          <span class="g_clickable_text u-sr-only">View Portfolio</span>
+                        <a class="g_clickable_link w-inline-block" href="https://wa.me/254114744256?text=Hello!%20I%27m%20interested%20in%20your%20services." aria-label="Chat with us on WhatsApp" target="_blank" rel="noopener noreferrer">
+                          <span class="g_clickable_text u-sr-only">WhatsApp Us</span>
                         </a>
                         <button type="" class="g_clickable_btn">
-                          <span class="g_clickable_text u-sr-only">View Portfolio</span>
+                          <span class="g_clickable_text u-sr-only">WhatsApp Us</span>
                         </button>
                       </div>
                       <div class="u-hide-if-empty u-icon-16"></div>
-                      <div aria-hidden="true" class="btn_main_text">View Portfolio</div>
+                      <div aria-hidden="true" class="btn_main_text">WhatsApp Us</div>
+                      <div class="u-hide-if-empty u-icon-16"></div>
+                    </div>
+                    <div data-wf--button-main--style="secondary" class="btn_main_wrap w-variant-e85564cd-af30-a478-692b-71732aefb3ab">
+                      <div class="g_clickable_wrap">
+                        <a class="g_clickable_link w-inline-block" href="tel:+254114744256" aria-label="Call us now">
+                          <span class="g_clickable_text u-sr-only">Call Us Now</span>
+                        </a>
+                        <button type="" class="g_clickable_btn">
+                          <span class="g_clickable_text u-sr-only">Call Us Now</span>
+                        </button>
+                      </div>
+                      <div class="u-hide-if-empty u-icon-16"></div>
+                      <div aria-hidden="true" class="btn_main_text">Call Us Now</div>
+                      <div class="u-hide-if-empty u-icon-16"></div>
+                    </div>
+                    <div data-wf--button-main--style="secondary" class="btn_main_wrap w-variant-e85564cd-af30-a478-692b-71732aefb3ab">
+                      <div class="g_clickable_wrap">
+                        <a class="g_clickable_link w-inline-block" href="mailto:info@mathengeinc.com?subject=Project%20Inquiry&body=Hello%20Mathenge%20Inc.%2C%0A%0AI%27m%20interested%20in%20your%20services.%20Please%20reach%20out%20to%20me%20with%20next%20steps.%0A%0AThanks%2C" aria-label="Email us">
+                          <span class="g_clickable_text u-sr-only">Email Us</span>
+                        </a>
+                        <button type="" class="g_clickable_btn">
+                          <span class="g_clickable_text u-sr-only">Email Us</span>
+                        </button>
+                      </div>
+                      <div class="u-hide-if-empty u-icon-16"></div>
+                      <div aria-hidden="true" class="btn_main_text">Email Us</div>
                       <div class="u-hide-if-empty u-icon-16"></div>
                     </div>
                   </div>
