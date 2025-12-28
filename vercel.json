@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    { "source": "/TUQO", "destination": "/TUQO.html" },
+    { "source": "/Contact", "destination": "/Contact.html" },
+    { "source": "/Portfolio", "destination": "/Portfolio.html" },
+    { "source": "/Home", "destination": "/index.html" }
+  ]
+}
