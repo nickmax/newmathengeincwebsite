@@ -34,6 +34,7 @@
       menu.style.display = open ? 'block' : 'none';
       menu.setAttribute('aria-hidden', open ? 'false' : 'true');
       button.setAttribute('aria-expanded', open ? 'true' : 'false');
+      document.body.classList.toggle('nav-open', open);
     };
 
     setOpen(false);

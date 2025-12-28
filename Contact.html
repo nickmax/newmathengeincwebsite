@@ -193,6 +193,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         transform: translateY(0);
       }
 
+      .hero_tagline {
+        margin-top: 0;
+        margin-bottom: 0.4rem;
+      }
+
+      .hero_wrap .u-btn-group {
+        animation: heroCtaFloat 6s ease-in-out infinite;
+      }
+
+      @keyframes heroCtaFloat {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-4px);
+        }
+      }
+
+
+      @media (width < 56em) {
+        .hero_lottie,
+        .hero_lottie .lottie_component {
+          display: none;
+        }
+      }
+
+
+
       .contact-form-grid .btn_main_wrap {
         position: relative;
       }
@@ -795,7 +824,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="u-container">
           <div class="u-grid-desktop">
             <div id="w-node-_49163a64-f629-70a2-5aaa-bb04d3aadbd9-32f5f893" class="u-column-8 u-align-self-center">
-              <p class="u-detail-m u-color-faded u-mb-text">Build Tomorrow, Today</p>
+              <p class="hero_tagline u-detail-m u-color-faded">Build Tomorrow, Today</p>
               <h1 class="u-display-xl u-mb-gutter">Contact Us</h1>
               <div>
                 <p class="u-paragraph-l u-max-width-40ch">Ready to start your next project? Share the details and we will follow up with clear next steps.</p>
