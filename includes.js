@@ -50,8 +50,8 @@
   }
 
   function boot() {
-    inject('site-nav', 'nav.html', initMobileNav);
-    inject('site-footer', 'footer.html');
+    inject('site-nav', '/nav.html', initMobileNav);
+    inject('site-footer', '/footer.html');
   }
 
   if (document.readyState === 'loading') {

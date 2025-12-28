@@ -1,24 +1,29 @@
 {
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/TUQO",
-      "destination": "/TUQO.html"
+      "source": "/Portfolio.html",
+      "destination": "/Portfolio",
+      "permanent": true
     },
     {
-      "source": "/Contact",
-      "destination": "/Contact.html"
+      "source": "/Contact.html",
+      "destination": "/Contact",
+      "permanent": true
     },
     {
-      "source": "/Portfolio",
-      "destination": "/Portfolio.html"
+      "source": "/TUQO.html",
+      "destination": "/TUQO",
+      "permanent": true
     },
     {
-      "source": "/Home",
-      "destination": "/index.html"
+      "source": "/Magari360.html",
+      "destination": "/Magari360",
+      "permanent": true
     },
     {
-      "source": "/Magari360",
-      "destination": "/Magari360.html"
+      "source": "/index.html",
+      "destination": "/",
+      "permanent": true
     }
   ]
 }
